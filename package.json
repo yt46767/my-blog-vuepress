@@ -1,0 +1,29 @@
+{
+  "name": "my-blog-vuepress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "tracer": "^1.0.1"
+  },
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "scripts": {
+    "sidebar-debug": "node --inspect-brk bin/sidebar-auto.js",
+    "sidebar": "node bin/sidebar-auto.js",
+    "nav-debug": "node --inspect-brk bin/nav-auto.js",
+    "nav": "node bin/nav-auto.js",
+    "compile": "node bin/sidebar-auto.js && node bin/nav-auto.js",
+    "dev": "vuepress dev docs",
+    "dev-all": "npm run compile && npm run dev",
+    "build": "npm run compile && vuepress build docs",
+    "publish": "E:/Install/Git/Git/bin/sh.exe ./deploy.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,52 @@
+## 小程序特性
++ App
+    概念：
+        定义应用程序实例对象（唯一）
+    书写范围：
+        app.js
++ Page
+    概念：
+        定义页面对象
+    书写范围：
+        pages/*.js
++ getApp()
+    概念：
+        获取全局应用程序对象
+    书写范围：
+        pages/*.js   
++ getCurrentPages
+    概念：
+        获取当前页面的调用栈（即：历史栈）
+    书写范围：
+        pages/*.js 
++ wx
+    概念：
+        小程序核心api
+    书写范围：
+        全局
+
+##  wxml特性（页面层，类似HTML/vue的template内容）
++ 数据绑定
+    语法遵循Mustache语法（也叫小胡子语法，用双大括号）
++ 区别
+    属性数据绑定，vue用：v-bind:前缀+双引号+大括号，小程序用：双引号+双大括号
+
+## js特性（逻辑层）
++ data
+    界面与逻辑间的桥梁
+```javascript
+    data: {
+    ···
+    }
+```
+
+## 小程序特点
+1. 不运行在浏览器中，没有BOM和DOM对象（即：没有window/document对象）
+2. 支持COMMONJS规范（同步模块化；require引入/module.export={}导出）
+3. js运行环境
+    ios:
+        JavascriptCore
+    android:
+        X5内核
+    开发者工具：
+        nwjs(即：chrome内核)
