@@ -4,7 +4,6 @@
     + 写入前端代码
     window.onerror=function(a,b,c,d,e){(new Image).src=`/m?p=${location.href}&`}
 + 第三方组件——badjs
-
 ## 错误日志监控
 + Doc  
 [官方git](https://github.com/getsentry)      

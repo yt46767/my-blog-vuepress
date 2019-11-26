@@ -1,8 +1,5 @@
-<!-- toc -->
-## [小马BI](https://xiaoma.qq.com/#/)
-+ 概念   
-智慧数据平台（驱动业务决策）
-+ 缺点
-1. 报表简单
-2. 可选择的报表类型少
-<!-- endtoc -->
+# 包含
++ [Window](1_Window/README.md)
++ [Linux](2_Linux/README.md)
++ [Mac](3_Mac/README.md)
++ [IPHONE](4_IPHONE/README.md)

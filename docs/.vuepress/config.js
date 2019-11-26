@@ -1,7 +1,7 @@
 var Nav = require('./config/nav.js');
 var Sidebar = require('./config/sidebar.js');
 module.exports = {
-    base: '/my-blog-vuepress',
+    base: '/my-blog-vuepress/',
     title: 'yt46767\'s Blog',
     // description: '学习、思考、实践、感悟”本就是一个从学而思到思而践，再到践而悟的螺旋式上升、循环往复的过程，是永无止境的。',
     themeConfig: {
@@ -17,6 +17,6 @@ module.exports = {
     head: [
         [ 'link', {rel: 'shortcut icon apple-touch-icon', href: 'favicon.ico' } ],
         // ['link', { rel: 'manifest', href: '/manifest.json' }],
-        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;' }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' }],
     ],
 }

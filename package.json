@@ -1,7 +1,7 @@
 {
   "name": "my-blog-vuepress",
   "version": "1.0.0",
-  "description": "",
+  "description": "我用vuepress框架做的博客项目，开发编译速度快、目录生成自动化、部署自动化。",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -15,15 +15,15 @@
   },
   "scripts": {
     "sidebar-debug": "node --inspect-brk bin/sidebar-auto.js",
-    "sidebar": "node bin/sidebar-auto.js",
     "nav-debug": "node --inspect-brk bin/nav-auto.js",
+    "sidebar": "node bin/sidebar-auto.js",
     "nav": "node bin/nav-auto.js",
     "compile": "node bin/sidebar-auto.js && node bin/nav-auto.js",
-    "dev": "vuepress dev docs",
-    "dev-all": "npm run compile && npm run dev",
-    "build": "npm run compile && vuepress build docs",
-    "publish": "E:/Install/Git/Git/bin/sh.exe ./deploy.sh"
+    "dev": "npm run compile && vuepress dev docs",
+    "build": "rm -rf ./docs/.vuepress/dist && npm run compile && vuepress build docs",
+    "publish": "npm run build && sh ./deploy.sh",
+    "git": "sh ./git.sh"
   },
-  "author": "",
+  "author": "Andy Yang",
   "license": "ISC"
 }
