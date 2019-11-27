@@ -4,8 +4,7 @@
 # 变量赋值，说明表如下：
 # 序号       描述           变量
 # $0        提交日志内容    log
-commitContent=
-if [ ! -n "$0" ]; then
+if [ ! $0 ]; then
   echo "日志更新内容不能为空，请您设置！"
 fi
 
@@ -16,7 +15,7 @@ set -e
 # 添加变化的文件和已提交的变化文件到暂存区
 git add -A 
 # 暂存区提交到本地库
-git commit -m commitContent
+git commit -m "$0"
 # 将本地版本库的分支推送到远程服务器上对应的分支
 git push
 

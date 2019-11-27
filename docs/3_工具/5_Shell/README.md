@@ -3,6 +3,8 @@
 "$0"，直接拿第一个参数
 https://zhidao.baidu.com/question/714636440747136725.html
 https://www.runoob.com/linux/linux-shell-passing-arguments.html
+传参赋值
+https://segmentfault.com/a/1190000019840727?utm_source=tag-newest
 
 # node环境
 ## node中执行shell命令  
