@@ -1,6 +1,6 @@
 # 基础
 ## shell传参
-$0，直接拿第一个参数
+"$0"，直接拿第一个参数
 https://zhidao.baidu.com/question/714636440747136725.html
 https://www.runoob.com/linux/linux-shell-passing-arguments.html
 
