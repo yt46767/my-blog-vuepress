@@ -1,3 +1,21 @@
+# 基础
+## git push --set-upstream
+git push --set-upstream origin master（省略形式为：git push -u origin master）将本地的master分支推送到origin主机（--set-upstream选项会指定一个默认主机），同时指定该主机为默认主机。
+好处：后面使用git push，不加任何参数。
+
+## git日志
+git log
+git log的落地方法：
+git log >log/update.log
+https://jingyan.baidu.com/article/4b52d702c3e68afc5d774b7e.html
+git log输出表格
+rm -rf log/update.csv && git log --date=iso --pretty=format:'"%h","%an","%ad","%s"' >> log/update.csv
+git log --date=iso --pretty=format:'"%h","%an","%ad","%s"' >> log/update.xlsx
+https://blog.csdn.net/ianly123/article/details/82348723
+git log格式化文档（--pretty=format:）
+https://blog.csdn.net/zheyiw/article/details/88996473
+注意：输出表格的文件格式只能csv
+
 # 案例
 ## github打造API网站  
 组件：  
@@ -42,3 +60,15 @@ git push -u origin --tags
 # 问题
 ## SEC7120: [CORS] 原点“ms-appx-web://microsoft.microsoftedge”无法支持“ms-appx-web:///assets/Fonts/BrowserMDL.ttf#Browser MDL2 Assets”的 cross-origin font 资源
 https://www.cnblogs.com/20180609miss/p/10276198.html
+
+## git log输出文件，中文乱码
++ 原因
+git log输出日志格式，默认为gbk
++ 解决：
+git log输出日志格式，设置为utf-8
+```shell
+git config --global i18n.commitencoding utf-8
+git config --global i18n.logoutputencoding utf-8
+export LESSCHARSET=utf-8
+```
+https://blog.csdn.net/qq_27258799/article/details/78977764

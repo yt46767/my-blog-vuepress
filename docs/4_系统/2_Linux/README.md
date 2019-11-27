@@ -1,6 +1,6 @@
 # 类型 
-+ [UBUNTU](#UBUNTU)  
-+ [CENTOS](#CENTOS) 
+<a href="#UBUNTU">UBUNTU</a>
+<a href="#CENTOS">CENTOS</a>
 
 # UBUNTU  
 ## 下载命令  

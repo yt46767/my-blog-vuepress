@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: 头像.jpg
+heroImage: 头像_new.jpg
 heroText: 个人博客
 tagline: 学习、思考、实践、感悟”本就是一个从学而思到思而践，再到践而悟的螺旋式上升、循环往复的过程，是永无止境的。
 actionText: 进一步了解 →
