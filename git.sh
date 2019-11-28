@@ -13,7 +13,7 @@ set -e
 # 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
 #   sh git.sh --b "feature/log" --l "完善git.sh"
 # 提交代码到分支master，提交内容是merge feature/log into master
-#   sh git.sh --p "master" --l "merge feature/log into master"
+#   sh git.sh --p "master" --l "完善git.sh"
 # 提交代码到当前分支，提交内容是完善git.sh
 #   sh git.sh --l "完善git.sh"
 
