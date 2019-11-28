@@ -12,7 +12,7 @@ set -e
 # 示例：
 # 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
 #   sh git.sh --b "feature/log" --l "完善git.sh"
-# 提交代码到分支master，提交内容是merge feature/log into master
+# 切换到分支master，提交代码到当前分支，提交内容是merge feature/log into master
 #   sh git.sh --p "master" --l "完善git.sh"
 # 提交代码到当前分支，提交内容是完善git.sh
 #   sh git.sh --l "完善git.sh"
@@ -56,7 +56,11 @@ for i in $*;do
             echo "git推送分支名不能为空！"
             exit
         else 
-            branchName=value
+            branchName=$value
+            # 切换分支
+            echo "正在切换分支$branchName..."
+            git checkout "$branchName"
+            echo "正在切换分支$branchName..."
         fi
     fi
 done
