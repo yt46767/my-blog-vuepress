@@ -71,7 +71,7 @@ git commit -m "$1"
 if [ ! $branchName ];then
   git push 
 else
-  git push origin "$branchName"
+  git push --set-upstream origin "$branchName"
 fi
 echo "成功提交代码！"
 
