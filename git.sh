@@ -1,6 +1,19 @@
 #!/bin/bash
 # author:yt46767
 
+# 使用说明：
+# 命令       描述           
+# --l        提交日志内容           
+# --b        创建分支 
+# --p        推送分支
+# 示例：
+# 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
+#   sh git.sh --b "feature/log" --l "完善git.sh"
+# 切换到分支master，将分支feature/log合并到当前分支
+#   sh git.sh --p "master" "feature/log"
+# 提交代码到当前分支，提交内容是完善git.sh
+#   sh git.sh --l "完善git.sh"
+
 # git常见操作
 # 切换分支
 # git checkout master
@@ -13,19 +26,6 @@
 
 # 确保脚本抛出遇到的错误
 set -e
-
-# 使用说明：
-# 命令       描述           
-# --l        提交日志内容           
-# --b        创建分支 
-# --p        推送分支
-# 示例：
-# 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
-#   sh git.sh --b "feature/log" --l "完善git.sh"
-# 切换到分支master，将分支feature/log合并到当前分支【废弃】
-#   sh git.sh --p "master" "feature/log"
-# 提交代码到当前分支，提交内容是完善git.sh
-#   sh git.sh --l "完善git.sh"
 
 index=1  #定义序号
 branchName="" #分支名,默认是master
