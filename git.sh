@@ -32,7 +32,7 @@ for i in $*;do
             echo "git日志内容不能为空！"
             exit
         else 
-            commitContent=value
+            commitContent=$value
         fi
     elif [ $i == "--b" -a $task -eq 0 ];then
         # echo $index
@@ -42,7 +42,7 @@ for i in $*;do
             echo "git创建分支名不能为空！"
             exit
         else 
-            branchName=value
+            branchName=$value
             # 创建git分支
             echo "正在创建分支$branchName..."
             git checkout -b "$branchName"
