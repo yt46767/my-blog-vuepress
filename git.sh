@@ -1,6 +1,16 @@
 #!/bin/bash
 # author:yt46767
 
+# git常见操作
+# 切换分支
+# git checkout master
+# 把分支feature/log合并当前分支
+# git merge feature/log
+# 缓存区取消
+# git reset HEAD
+# 把全部更改的文件都取消
+# git reset --hard HEAD
+
 # 确保脚本抛出遇到的错误
 set -e
 
@@ -12,7 +22,7 @@ set -e
 # 示例：
 # 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
 #   sh git.sh --b "feature/log" --l "完善git.sh"
-# 切换到分支master，提交代码到当前分支，提交内容是merge feature/log into master
+# 切换到分支master，提交代码到当前分支，提交内容是merge feature/log into master【废弃】
 #   sh git.sh --p "master" --l "完善git.sh"
 # 提交代码到当前分支，提交内容是完善git.sh
 #   sh git.sh --l "完善git.sh"
@@ -48,20 +58,20 @@ for i in $*;do
             git checkout -b "$branchName"
             echo "成功创建分支$branchName！"
         fi
-    elif [ $i == "--p" -a $task -eq 0 ];then
-        # echo $index
-        let task+=1
-        value=$(eval echo '$'${index})
-        if [ ! $value -o $value == "--l" -o $value == "--p" ];then
-            echo "git推送分支名不能为空！"
-            exit
-        else 
-            branchName=$value
-            # 切换分支
-            echo "正在切换分支$branchName..."
-            git checkout "$branchName"
-            echo "正在切换分支$branchName..."
-        fi
+    # elif [ $i == "--p" -a $task -eq 0 ];then【废弃】
+    #     # echo $index
+    #     let task+=1
+    #     value=$(eval echo '$'${index})
+    #     if [ ! $value -o $value == "--l" -o $value == "--p" ];then
+    #         echo "git推送分支名不能为空！"
+    #         exit
+    #     else 
+    #         branchName=$value
+    #         # 切换分支
+    #         echo "正在切换分支$branchName..."
+    #         git checkout "$branchName"
+    #         echo "正在切换分支$branchName..."
+    #     fi
     fi
 done
 
