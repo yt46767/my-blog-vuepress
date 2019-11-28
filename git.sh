@@ -66,7 +66,7 @@ for i in $*;do
 done
 
 # ---------- git提交代码 ---------------#
-echo "正在提交代码..."
+echo "正在提交代码到分支$branchName..."
 # 添加变化的文件和已提交的变化文件到暂存区
 git add -A 
 # 暂存区提交到本地库
@@ -77,7 +77,7 @@ if [ ! $branchName ];then
 else
   git push --set-upstream origin "$branchName"
 fi
-echo "成功提交代码！"
+echo "成功提交代码到分支$branchName！"
 
 # 输出版本更新日志
 echo "正在输出日志文件..."
