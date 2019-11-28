@@ -11,11 +11,11 @@ set -e
 # --p        推送分支
 # 示例：
 # 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
-# sh git.sh --b "feature/log" --l "完善git.sh"
+#   sh git.sh --b "feature/log" --l "完善git.sh"
 # 提交代码到分支master，提交内容是merge feature/log into master
-# sh git.sh --p "master" --l "merge feature/log into master"
+#   sh git.sh --p "master" --l "merge feature/log into master"
 # 提交代码到当前分支，提交内容是完善git.sh
-# sh git.sh --l "完善git.sh"
+#   sh git.sh --l "完善git.sh"
 
 index=1  #定义序号
 branchName="" #分支名,默认是master
@@ -42,9 +42,11 @@ for i in $*;do
             echo "git创建分支名不能为空！"
             exit
         else 
-            ranchName=value
+            branchName=value
             # 创建git分支
+            echo "正在创建分支$branchName..."
             git checkout -b "$branchName"
+            echo "成功创建分支$branchName！"
         fi
     elif [ $i == "--p" -a $task -eq 0 ];then
         # echo $index
@@ -71,15 +73,20 @@ if [ ! $branchName ];then
 else
   git push origin "$branchName"
 fi
+echo "成功提交代码！"
 
 # 输出版本更新日志
+echo "正在输出日志文件..."
 rm -rf log/update.csv 
 git log --date=iso --pretty=format:'"%h","%an","%ad","%s"' >> log/update.csv
+echo "成功输出日志文件！"
 
 # ---------- 提交日志 ---------------#
+echo "正在提交日志文件..."
 # 添加变化的文件和已提交的变化文件到暂存区
 git add -A 
 # 暂存区提交到本地库
 git commit -m "提交git日志文件"
 # 将本地版本库的分支推送到远程服务器上对应的分支
 git push
+echo "成功提交日志文件！"
