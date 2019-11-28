@@ -1,4 +1,3 @@
-<!-- toc -->
 ## 前端错误监控
 + 原理
     + 写入前端代码
@@ -20,6 +19,5 @@ https://sentry.io/onboarding/yangtao/get-started/
 https://sentry.io/yangtao/yangtao/getting-started/javascript/
 + source map上报sentry
     + auth token创建    
-    ![Image Text](sentry_authToken.png) 
+    ![Image Text](./sentry_authToken.png) 
     https://sentry.io/settings/account/api/auth-tokens/  
-<!-- endtoc -->

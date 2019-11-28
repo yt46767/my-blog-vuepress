@@ -1,4 +1,5 @@
-## 优先级
+## 基础
+### 优先级
   1. 基本公式：  
   ```
   内联 > ID选择器 > 类选择器 > 标签选择器
@@ -30,17 +31,17 @@
   谁位置靠后谁优先级高 
   ```
 
-## 伪类、伪元素的区别
-### 单位
-  + #### px
+### 伪类、伪元素的区别
+#### 单位
+  + ##### px
     + 概念：   
       <span style="display: inline-block;width:20px;">&nbsp;</span>精准像素
-  + #### em   
+  + ##### em   
     + 概念：   
       <span style="display: inline-block;width:20px;">&nbsp;</span>相对单位
     + 计算：   
       <span style="display: inline-block;width:20px;">&nbsp;</span>基准点为父节点的字体大小，如果自身节点定义字体大小，则优先基于自身
-  + #### rem
+  + ##### rem
     + 概念：     
       <span style="display: inline-block;width:20px;">&nbsp;</span>相对单位
     + 计算    
@@ -48,7 +49,7 @@
     + 兼容   
       <span style="display: inline-block;width:20px;">&nbsp;</span>css3新增属性，支持chrome/firefox/IE9 
 
-## [伪元素](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements)  
+### [伪元素](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-elements)  
   ```  
   (常见)  
   ::before (:before)  
@@ -65,7 +66,7 @@
   ::spelling-error     
   ::cue (:cue)  
   ```  
-## [伪类](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes)  
+### [伪类](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes)  
   ```  
   (切换元素状态)  
   :focus  

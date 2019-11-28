@@ -1,18 +1,18 @@
-# 下载  
+## 下载  
 http://nodejs.cn/download/ 
 
-# 基础
-## node运行js文件，打断调试  
+## 基础
+### node运行js文件，打断调试  
 https://blog.csdn.net/buddha_itxiong/article/details/80988981  
 chrome访问：chrome://inspect/#devices，进行调试 
 
-# 问题
-## npm install 报错（npm ERR! errno -4048，Error: EPERM: operation not permitted,）解决方法  
+## 问题
+### npm install 报错（npm ERR! errno -4048，Error: EPERM: operation not permitted,）解决方法  
 直接用命令清理就行，控制台输入：  
 npm cache clean --force  
 https://blog.csdn.net/qq_35624642/article/details/78393035  
 
-## 验证：用formidable上传文件  
+### 验证：用formidable上传文件  
 可能报错：  
     Can t set headers after they are sent  
 [情况1]  
@@ -118,8 +118,8 @@ https://blog.csdn.net/qq_35624642/article/details/78393035
     });  
 ```  
 
-# 案例
-## 双向视频通话技术——webrtc  
+## 案例
+### 双向视频通话技术——webrtc  
 参考：  
 https://github.com/ShukriChiu/webrtc.chatdemo  
 https://github.com/simplewebrtc/SimpleWebRTC  

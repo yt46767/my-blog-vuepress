@@ -1,5 +1,5 @@
-# 问题
-## Cannot find module '../../package.json'. Consider using '--resolveJsonModule' to import module with '.json' extensionts(2732)
+## 问题
+### Cannot find module '../../package.json'. Consider using '--resolveJsonModule' to import module with '.json' extensionts(2732)
 + STEP 1:
 ```javascript
 {

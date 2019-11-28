@@ -1,23 +1,23 @@
-# 了解  
+## 了解  
 1、Docker CLI 客户端，用来运行docker引擎创建镜像和容器  
 2、Docker Machine. 可以让你在windows的命令行中运行docker引擎命令  
 3、Docker Compose. 用来运行docker-compose命令  
 4、Kitematic. 这是Docker的GUI版本  
 5、Docker QuickStart shell. 这是一个已经配置好Docker的命令行环境  
 6、Oracle VM Virtualbox. 虚拟机   
-## Docker  
+### Docker  
 建立容易迁移环境  
-## Docker官网  
+### Docker官网  
 https://hub.docker.com/  
 
-# 教程  
-## mac搭建docker的教程  
+## 教程  
+### mac搭建docker的教程  
 重要教程：   
 + https://www.runoob.com/docker/windows-docker-install.html  
 + https://blog.51cto.com/13673090/2092462  
 
-# 启动  
-## window本机开发时，启动docker  
+## 启动  
+### window本机开发时，启动docker  
 + 前提  
 不要运行太多软件，占用内存，否则docker会因为内存不足，而无法启动  
 + 启动  
@@ -26,7 +26,7 @@ https://hub.docker.com/
 —— 是否启动成功？  
 —— 成功的标志：  
 右下角的docker缩略图标，鼠标放置时显示"docker desktopis running"  
-## 启动步骤<span style="color: green;">（成功）</span>  
+### 启动步骤<span style="color: green;">（成功）</span>  
 + STEP 1 安装docker  
 ```  
 brew cask install docker  
@@ -67,8 +67,8 @@ docker stop xxx
 备注：   
 xxx，指容器启动后生成的进程ID字符串。一定要有开头，可以是片段  
 
-# 基础  
-## 全命令  
+## 基础  
+### 全命令  
 仓库相关操作  
 docker pull     #从远程仓库拉取镜像到本地  
 docker push     #推送本地镜像到远程仓库  
@@ -136,13 +136,13 @@ docker system       #管理系统信息
 docker volume       #卷管理  
 参考：  
 https://blog.csdn.net/xhyxxx/article/details/75447962  
-## docker.app之preferences全解：  
+### docker.app之preferences全解：  
 https://blog.csdn.net/w275840140/article/details/80158972  
-## window7的docker  
-### 快速启动docker  
+### window7的docker  
+#### 快速启动docker  
 + Step1: 打开cmd  
 + Step2: 拖拽C:\Program Files\Docker Toolbox\start.sh到cmd里，点击enter执行。  
-## window的docker配置加速器  
+### window的docker配置加速器  
 + 在Docker的配置“Demon”中，在“Registry mirrors”下添加：  
 https://registry.docker-cn.com  
 + 备注：  
@@ -155,27 +155,27 @@ https://blog.csdn.net/slibra_L/article/details/77505003
 https://segmentfault.com/a/1190000016083023?utm_source=tag-newest  
 + 参考：  
 https://segmentfault.com/a/1190000016083023?utm_source=tag-newest  
-## 查看镜像  
+### 查看镜像  
 ```  
 Docker ps -a  
 ```  
-## 启动镜像  
+### 启动镜像  
 docker start 镜像id  
 参考：  
 https://www.cnblogs.com/asxf/p/11057638.html  
-## 阿里云镜像加速  
+### 阿里云镜像加速  
 参考：  
 控制台  
 https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors  
 教程  
 https://blog.csdn.net/my__holiday/article/details/79111397  
-## docker安装的系统  
+### docker安装的系统  
 linux  
-## docker-compose用法  
-## Docker 运行时资源限制-内存memory、交换机分区Swap、CPU  
-## docker常用命令  
-![Image Text](docker-cmd.png)  
-## 镜像随docker容器启动而自动启动  
+### docker-compose用法  
+### Docker 运行时资源限制-内存memory、交换机分区Swap、CPU  
+### docker常用命令  
+![Image Text](./docker-cmd.png)  
+### 镜像随docker容器启动而自动启动  
 --restart=unless-stopped  
 或  
 restart=always  
@@ -191,22 +191,22 @@ docker exec -it docker-gitlab-master_gitlab_1 -d --restart=always /bin/bash
 + 参考：  
 https://blog.csdn.net/qq_38522268/article/details/83894903  
 https://www.cnblogs.com/kaishirenshi/p/10396446.html  
-## docker的ip：  
+### docker的ip：  
 https://jingyan.baidu.com/article/95c9d20d61bc1dec4f756156.html  
-## docker 设置代理vpn  
+### docker 设置代理vpn  
 https://www.cnblogs.com/jacquin/p/9604576.html  
-## ssh连接docker container  
+### ssh连接docker container  
 https://www.cnblogs.com/linguoguo/p/10248074.html  
 真实原理：  
 在Windows上搭建docker服务器需要在Windows模拟一个Linux平台，然后在Linux平台上搭建的docker服务器，所以在使用ssh工具连接docker容器的时候，使用的ip地址不是docker容器的地址，也不能使用localhost、127.0.0.1，需要使用 docker-mechine IP default命令获取到虚拟Linux的IP地址，通过这个地址使用 ssh -p xxx root@192.168.100.0（此地址是通过命令获取到的IP），然后才能登录。使用xshell登录docker容器后，利用xftp连接进行文件的传送  
 图解：  
-![Image Text](window-linux-docker.png)  
+![Image Text](./window-linux-docker.png)  
 参考：  
 https://www.cnblogs.com/lanrumeng/p/9764013.html  
 https://www.cnblogs.com/qingyunzong/p/9021140.html  
-## 其他  
+### 其他  
 docker exec -it a7328ec41e91  update-permissions  
-## 大杀器docker-compose的特殊命令：  
+### 大杀器docker-compose的特殊命令：  
 build 构建或重建服务  
 help 命令帮助  
 kill 杀掉容器  
@@ -223,40 +223,40 @@ stop 停止服务
 up 创建并启动容器  
 参考：  
 https://www.cnblogs.com/williamjie/p/9103327.html  
-## window的docker连接ssh  
+### window的docker连接ssh  
 安装openssh-server  
 https://www.v2ex.com/t/468079  
 安装ubuntu镜像，实现bash命令  
 https://blog.51cto.com/6226001001/1953310  
 https://www.cnblogs.com/xingyunfashi/p/8857093.html  
-## docker run  
+### docker run  
 创建一个新的容器并运行一个命令  
-## docker镜像卸载  
+### docker镜像卸载  
 docker rmi -f image_id  
 
-# 迁移  
+## 迁移  
 将本地docker容器迁移到服务端  
 
-# 容器  
-## web服务（即：web容器）  
-### 在docker里下载镜像  
+## 容器  
+### web服务（即：web容器）  
+#### 在docker里下载镜像  
 ```javascript  
 docker pull training/webapp  
 ```  
 注：拉取web项目代码  
-### 后台运行web服务  
+#### 后台运行web服务  
 ```javascript  
 docker run -d -P training/webapp python app.py  
 ```  
-### 查看运行容器  
+#### 查看运行容器  
 ```javascript  
 docker ps  
 ```  
-### 映射到本机指定的端口  
+#### 映射到本机指定的端口  
 ```javascript  
 docker run -d -p 5000:5000 training/webapp python app.py  
 ```  
-### 停止web服务  
+#### 停止web服务  
 语法：  
 ```javascript  
 docker stop ID/名字  
@@ -265,7 +265,7 @@ docker stop ID/名字
 ```javascript  
 docker stop 49e94b856b2c  
 ```  
-### 重启web服务  
+#### 重启web服务  
 语法：  
 ```javascript  
 docker stop ID/名字  
@@ -274,13 +274,13 @@ docker stop ID/名字
 ```javascript  
 docker start 49e94b856b2c  
 ```  
-### 移除web服务  
+#### 移除web服务  
 ```javascript  
 docker rm 49e94b856b2c  
 ```  
 
-# 问题  
-## Unable to find image 'hello-world  
+## 问题  
+### Unable to find image 'hello-world  
 + 分析：   
 这个时候不要害怕，docker只是还没有下载这个镜像，所以我们重复命令，  
 这时我们就会发现，Docker从Docker Hub上获取到最新的Hello World镜像，下载到了本地   
@@ -293,13 +293,13 @@ https://alzgoonw.mirror.aliyuncs.com
 http://hub-mirror.c.163.com  
 2. 重启电脑，让它生效  
 3. docker run hello-world  
-## 启动web容器后，访问不到服务  
-![Image Text](docker-images-web1.png)  
+### 启动web容器后，访问不到服务  
+![Image Text](./docker-images-web1.png)  
 + 原因：  
 访问ip错了  
 + 解决：  
 docker的默认访问IP是：192.168.99.100  
-## Error response from daemon: driver failed programming external connectivity on endpoint docker-gitlab-master_gitlab_1 (acdb8a1ee5d4d9312e0b78eb4bfd41b94782b83fcd18e2dc5d6f54113854793f): Error starting userland proxy: /forwards/expose/port returned unexpected status: 500  Error: failed to start containers: eb82f7339baf  
+### Error response from daemon: driver failed programming external connectivity on endpoint docker-gitlab-master_gitlab_1 (acdb8a1ee5d4d9312e0b78eb4bfd41b94782b83fcd18e2dc5d6f54113854793f): Error starting userland proxy: /forwards/expose/port returned unexpected status: 500  Error: failed to start containers: eb82f7339baf  
 + 原因：  
 端口被占用  
 + 解决：  
@@ -319,7 +319,7 @@ taskkill /pid 80 /pid 90
 taskkill /pid 3912 /f  
 参考：  
 https://www.cnblogs.com/david-lcw/p/10228829.html  
-## Only one usage of each socket address (protocol/network address/port) is normally permitted.  
+### Only one usage of each socket address (protocol/network address/port) is normally permitted.  
 原因：  
 这个错误是端口占用导致。  
 解决：  
@@ -328,13 +328,13 @@ https://www.cnblogs.com/david-lcw/p/10228829.html
 https://blog.csdn.net/weixin_38383877/article/details/81202287  
 后来，发现是window的端口占用了  
 解决：  
-## 查看运行的tcp端口及其进程号：  
+### 查看运行的tcp端口及其进程号：  
 netstat -ano  
-## 查看进程号对应的程序  
+### 查看进程号对应的程序  
 netstat -aon|findstr pid  
-## 杀掉该程序（最终解决办法）  
+### 杀掉该程序（最终解决办法）  
 taskkill /f /t /im com.docker.backend.exe  
 参考：  
 https://www.cnblogs.com/micenote/p/6063242.html  
-## window遇到的docker坑及其解决方法  
+### window遇到的docker坑及其解决方法  
 https://www.jianshu.com/p/a7bf567194f4  

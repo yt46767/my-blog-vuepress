@@ -1,4 +1,5 @@
-## docker安装php镜像  
+## 教程
+### docker安装php镜像  
 docker pull php:5.6-fpm  
 参考：  
 https://www.runoob.com/docker/docker-install-php.html  

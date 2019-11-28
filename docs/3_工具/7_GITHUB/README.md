@@ -1,9 +1,8 @@
-# 基础
-## git push --set-upstream
+## 基础
+### git push --set-upstream
 git push --set-upstream origin master（省略形式为：git push -u origin master）将本地的master分支推送到origin主机（--set-upstream选项会指定一个默认主机），同时指定该主机为默认主机。
 好处：后面使用git push，不加任何参数。
-
-## git日志
+### git日志
 git log
 git log的落地方法：
 git log >log/update.log
@@ -15,9 +14,11 @@ https://blog.csdn.net/ianly123/article/details/82348723
 git log格式化文档（--pretty=format:）
 https://blog.csdn.net/zheyiw/article/details/88996473
 注意：输出表格的文件格式只能csv
+### 创建分支
+git checkout -b feature/xxxx
 
-# 案例
-## github打造API网站  
+## 案例
+### github打造API网站  
 组件：  
 docsify  
 源码仓库：
@@ -25,8 +26,8 @@ https://github.com/docsifyjs/docsify
 api中文文档：
 https://docsify.js.org/#/zh-cn/
 
-# 使用
-## 常见场景命令
+## 使用
+### 常见场景命令
 Command line instructions
 You can also upload existing files from your computer using the instructions below.
 
@@ -57,11 +58,11 @@ git remote add origin http://localhost:10080/root/my-diary.git
 git push -u origin --all
 git push -u origin --tags
 
-# 问题
-## SEC7120: [CORS] 原点“ms-appx-web://microsoft.microsoftedge”无法支持“ms-appx-web:///assets/Fonts/BrowserMDL.ttf#Browser MDL2 Assets”的 cross-origin font 资源
+## 问题
+### SEC7120: [CORS] 原点“ms-appx-web://microsoft.microsoftedge”无法支持“ms-appx-web:///assets/Fonts/BrowserMDL.ttf#Browser MDL2 Assets”的 cross-origin font 资源
 https://www.cnblogs.com/20180609miss/p/10276198.html
 
-## git log输出文件，中文乱码
+### git log输出文件，中文乱码
 + 原因
 git log输出日志格式，默认为gbk
 + 解决：

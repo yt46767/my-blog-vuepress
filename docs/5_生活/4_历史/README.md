@@ -1,4 +1,5 @@
-## 通用电气公司(美国)
+## 公司
+### 通用电气公司(美国)
 + 来源    
 <span style="display: inline-block;width:20px;"></span>爱迪生创建的爱迪生电力公司  
 + 历史   

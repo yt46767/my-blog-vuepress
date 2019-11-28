@@ -1,5 +1,5 @@
-# 第三方平台
-## [小马BI](https://xiaoma.qq.com/#/)
+## 第三方平台
+### [小马BI](https://xiaoma.qq.com/#/)
 + 概念   
 智慧数据平台（驱动业务决策）
 + 缺点

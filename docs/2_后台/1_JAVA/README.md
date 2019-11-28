@@ -1,5 +1,4 @@
-## Spring MVC
-
+## 基础
 ### 1. spring
     - 描述
       - 非侵入式
@@ -159,8 +158,8 @@
   - http://www.android100.org/html/201605/30/240209.html
 
 
-## 数据类型
-### 1. 数据类型
+### 数据类型
+#### 1. 数据类型
     - 基本数据类型（8个）
       short、int、boolean、long、char、byte、float、double
       - 易漏
@@ -179,11 +178,11 @@
     | byte       |  8位   |   1字节 |
      -------------------------------
 
-### 2.enum
+#### 2.enum
     - doc
       http://www.cnblogs.com/hyl8218/p/5088287.html
 
-### 3.arrayList & linkedList & vector
+#### 3.arrayList & linkedList & vector
     - arrayList
       - 描述
         - 异步
@@ -201,7 +200,7 @@
         - 便于查询和修改
         - 不便于插入和删除
 
-### 4.Hashtable & HashMap
+#### 4.Hashtable & HashMap
     - Hashtable
       - 描述
         - 键值不允许为null
@@ -214,7 +213,7 @@
         - 非线程安全
         - 树型存储结构，实现Map接口
 
-### 5.树 & 二叉树
+#### 5.树 & 二叉树
     - 树
       - 描述
         - 不可以为空
@@ -230,19 +229,19 @@
 
 
 
-## 方法
-### 1.传参
+### 方法
+#### 1.传参
       - 参数类型
         - 基本类型
         - 对象类型
 
-### 2.参数
+#### 2.参数
     - 形式参数
       - 定义函数时，写在括号里的参数
     - 实际参数
       - 调用函数时，写在括号里的参数
 
-### 3.== & equals
+#### 3.== & equals
     - ==
       - 描述
         -用于八种基本数据类型，是比值
@@ -250,7 +249,7 @@
       - 描述
         - 用于对象，是比地址
 
-### 4.this & super
+#### 4.this & super
     - this
       - 描述
         调用本类的属性和方法
@@ -280,7 +279,7 @@
           }
         }
 
-### 5.length
+#### 5.length
     - 方法
       - 如：String.length();
     - 属性
@@ -289,8 +288,8 @@
 
 
 
-## 异常
-### 1.处理异常
+### 异常
+#### 1.处理异常
     - 关键字
       - throw
         - 描述
@@ -307,8 +306,8 @@
 
 
 
-## 修饰符
-### 1.final & static
+### 修饰符
+#### 1.final & static
     - final
       - 描述:
         - 修饰变量、方法、类
@@ -382,7 +381,7 @@
             }
           }
 
-### 2.访问控制符
+#### 2.访问控制符
     - 描述
        -----------------------------------------------
       | 访问控制符  | 类内部 | 本包  | 子类  | 外部包 |
@@ -397,8 +396,8 @@
 
 
 
-## 同步与异步
-### 1.线程
+### 同步与异步
+#### 1.线程
     - 五种状态
       - 新建
       - 就绪
@@ -414,8 +413,8 @@
 
 
 
-## IO层
-### 1.collection
+### IO层
+#### 1.collection
     - 结构：
       ＩＯ管道流
       缓冲流
@@ -430,7 +429,7 @@
       - 描述：
         可以将文件同时读写出来
 
-### 2.字符流
+#### 2.字符流
     - 读取输入流
       InputStreamReader      ->         BufferedReader
       读 字节流 转 字符流 传 输入流     读 字符输入流
@@ -438,8 +437,8 @@
       BufferedWriter   ->  OutputStreamWriter
       写 字符输出流        字符流 转 字节流 传 底层传输流
 
-## 系统
-### 1.GC
+### 系统
+#### 1.GC
     - 描述：
       - GC, gabage collection, 垃圾回收
     - 达到回收的条件：
@@ -457,15 +456,18 @@ https://github.com/yt46767/JavaKnowSummary/blob/master/README.md
 doc:
 http://www.th7.cn/Program/java/201510/633422.shtml
 
-## 单线程socket/多线程socket
+### 单线程socket/多线程socket
 
-## 基础补充
+### 基础补充
 https://lrh1993.gitbooks.io/android_interview_guide/content/
 
-## CRUD
+### CRUD
 + 概念  
 <span style="display: inline-block;width:20px;"></span>指在做计算处理时的增加(Create)、读取查询(Retrieve)、更新(Update)和删除(Delete)几个单词的首字母简写，即：CRUD=Create(增加)+Retrieve(读取查询)+Update(更新/更改)+Delete(删除)
 
-# 示例
-## java的JDBC项目，银行管理系统，用来练习java，数据库采用的是mysql
+## 示例
+### java的JDBC项目，银行管理系统，用来练习java，数据库采用的是mysql
 https://github.com/wswenyue/BankManage
+
+## 框架
+### Spring MVC
