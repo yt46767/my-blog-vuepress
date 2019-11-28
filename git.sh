@@ -53,7 +53,7 @@ for i in $*;do
             exit
         else 
             branchName=$value
-            # 创建git分支
+            # 创建git分支[测试]
             echo "正在创建分支$branchName..."
             git checkout -b "$branchName"
             echo "成功创建分支$branchName！"
