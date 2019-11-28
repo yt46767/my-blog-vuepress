@@ -53,7 +53,7 @@ for i in $*;do
             exit
         else 
             branchName=$value
-            # 创建git分支[测试]
+            # 创建git分支
             echo "正在创建分支$branchName..."
             git checkout -b "$branchName"
             echo "成功创建分支$branchName！"
@@ -68,7 +68,7 @@ for i in $*;do
             echo "git合并分支名不能为空！"
             exit
         else 
-            # 切换分支
+            # 切换分支[测试]
             echo "正在将分支$value1合并到分支$value..."
             git checkout "$value"
             git merge "$value1"
