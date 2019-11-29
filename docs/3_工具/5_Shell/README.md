@@ -51,6 +51,10 @@ let,是 BASH 中用于计算的工具
 ```
 ### 运算符
 https://www.cnblogs.com/good-study/p/11112919.html
+### 赋权给所有人
+```
+chmod -R 777 /home/user
+```
 
 ## node环境  
 ### node中执行shell命令  
