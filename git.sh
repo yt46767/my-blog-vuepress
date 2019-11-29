@@ -5,12 +5,12 @@
 # 命令       描述           
 # --l        提交日志内容           
 # --b        创建分支 
-# --p        推送分支
+# --p        合并分支[废弃]
 # 示例：
 # 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
 #   sh git.sh --b "feature/log" --l "完善git.sh"
-# 切换到分支master，将分支feature/log合并到当前分支
-#   sh git.sh --p "master" "feature/log"
+# 切换到分支master，将分支feature/log合并到当前分支[废弃] (废弃原因：应为checkout时git.sh在运行，无法checkout，即：文件会进行更换，而这时git.sh文件被占用！)
+#   sh git.sh --p "master" "feature/log" 
 # 提交代码到当前分支，提交内容是完善git.sh
 #   sh git.sh --l "完善git.sh"
 
@@ -58,23 +58,22 @@ for i in $*;do
             git checkout -b "$branchName"
             echo "成功创建分支$branchName！"
         fi
-    elif [ $i == "--p" -a $task -eq 0 ];then
-        # echo $index
-        let task+=1
-        value=$(eval echo '$'${index})
-        let index+=1
-        value1=$(eval echo '$'${index})
-        if [ ! $value -o $value == "--l" -o $value == "--p" ];then
-            echo "git合并分支名不能为空！"
-            exit
-        else 
-            # 切换分支[测试3]
-            echo "正在将分支$value1合并到分支$value..."
-            # git checkout "$value" && git merge "$value1"
-            git checkout "$value"
-            echo "成功将分支$value1合并到分支$value！"
-            exit
-        fi
+    # elif [ $i == "--p" -a $task -eq 0 ];then [废弃]
+    #     # echo $index
+    #     let task+=1
+    #     value=$(eval echo '$'${index})
+    #     let index+=1
+    #     value1=$(eval echo '$'${index})
+    #     if [ ! $value -o $value == "--l" -o $value == "--p" ];then
+    #         echo "git合并分支名不能为空！"
+    #         exit
+    #     else 
+    #         # 切换分支[测试3]
+    #         echo "正在将分支$value1合并到分支$value..."
+    #         git merge "$value1"
+    #         echo "成功将分支$value1合并到分支$value！"
+    #         exit
+    #     fi
     fi
 done
 

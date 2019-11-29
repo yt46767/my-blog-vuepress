@@ -21,15 +21,10 @@ npm run publish
 -|-|        
 --l|提交日志内容           
 --b|创建分支 
---p|推送分支
 ## 示例：
 + 创建分支feature/log，并提交代码到这个分支，提交内容是完善git.sh
 ```
 sh git.sh --b "feature/log" --l "完善git.sh"
-```
-+ 切换到分支master，将分支feature/log合并到当前分支
-```
-sh git.sh --p "master" "feature/log"
 ```
 + 提交代码到当前分支，提交内容是完善git.sh
 ```
