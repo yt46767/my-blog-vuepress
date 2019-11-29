@@ -70,7 +70,8 @@ for i in $*;do
         else 
             # 切换分支[测试3]
             echo "正在将分支$value1合并到分支$value..."
-            git checkout "$value" && git merge "$value1"
+            # git checkout "$value" && git merge "$value1"
+            git checkout "$value"
             echo "成功将分支$value1合并到分支$value！"
             exit
         fi
