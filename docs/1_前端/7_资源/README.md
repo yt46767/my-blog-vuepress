@@ -1,7 +1,7 @@
 ## 基础
 ### 站长下载
 http://down.chinaz.com
-### 免费在线生成logo+文字
+### 免费在线生成图标（logo+文字）
 https://logotypemaker.com/app?logo_name=answer-card#generator
 ### 阿里的免费图标：
 https://www.iconfont.cn/search/index?q=%E4%B9%A6%E7%B1%8D&page=1
