@@ -8,6 +8,14 @@ https://sipub.sz.gov.cn/hspms/
 + 深圳社保查询个人账户缴费明细
 建议用"深圳社保"微信公众号来查询：
 http://bsy.sz.bendibao.com/bsyDetail/615926.html
+### 深A、沪A区别：
+沪A股东卡，一个人只能有三个。
+一个沪A股东卡，只能挂一个资金号。
+-----------------------------------
+深A股东卡，一个人能开无数个，但默认只开一个。
+因为一个深A股东卡，可挂无数个资金账号。
+### [货币官网](https://otc.huobi.co/zh-cn/client?switch=1)
+### [论文格式](https://wenku.baidu.com/view/1014dc7f4b35eefdc9d3331a.html?from=search)
 
 ## 公司
 ### 平安
