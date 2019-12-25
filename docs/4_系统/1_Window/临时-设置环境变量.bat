@@ -1,0 +1,1 @@
+setx PATH "%PATH%;C:\Users\ASUS\AppData\Roaming\Python\Python38\;C:\Users\ASUS\AppData\Roaming\Python\Python38\Scripts\"
