@@ -5,6 +5,8 @@ http://down.chinaz.com
 https://logotypemaker.com/app?logo_name=answer-card#generator
 ### 阿里的免费图标：
 https://www.iconfont.cn/search/index?q=%E4%B9%A6%E7%B1%8D&page=1
+### 指定银行生成卡号:(非常好用)
+https://www.jlshare.top/bankCard
 
 ## 模板
 ### 拖拽式建站
