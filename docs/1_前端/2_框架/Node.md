@@ -83,4 +83,11 @@ node版本：v11.15.0
 gulp版本：^3.9.1
 #### OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
 解决：
-????
+出现此问题有可能是上传大小限制：
+执行如下命令
+git config http.postBuffer 524288000
+524288000算法：
+1024*1024*500
+出现如下错误：curl 56 OpenSSL SSL_read:SSL_ERROR_sysCALL
+执行：
+git config http.sslVerify "false"

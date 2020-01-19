@@ -133,12 +133,15 @@ https://blog.csdn.net/qq_35624642/article/details/78393035
     });  
 ```  
 
+<<<<<<< HEAD
 ## 插件 
 ### nvmw
 只能用于window的cmd
 注意：
 nvmw切换后
 
+=======
+>>>>>>> 6adf4891d2866933f48b458a4639561d0a0bf9ac
 ## 案例
 ### 双向视频通话技术——webrtc  
 参考：  

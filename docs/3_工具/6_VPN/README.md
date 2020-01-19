@@ -22,6 +22,7 @@ Enjoy it!
 重启：/etc/init.d/shadowsocks restart  
 状态：/etc/init.d/shadowsocks status  
 配置文件路径：/etc/shadowsocks.json  
+(可修改端口和密码)
 卸载方法：/usr/local/src/shadowsocks.sh uninstall  
 日志： /var/log/shadowsocks.log  
 #### ping ip  
@@ -61,7 +62,7 @@ https://www.jianshu.com/p/4ed1c21ff326
 http://ping.chinaz.com/199.247.17.76  
 https://www.chenweiliang.com/cwl-661.html  
 #### 500 Internal Privoxy Error  
-firewall-cmd --zone=public --add-port=80/tcp --permanent && &nbsp;firewall-cmd --reload  
+firewall-cmd --zone=public --add-port=8089/tcp --permanent && firewall-cmd --reload  
 参考：  
 https://www.cnblogs.com/love-wife/p/10903876.html  
 
