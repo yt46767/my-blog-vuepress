@@ -41,11 +41,11 @@ https://docsify.js.org/#/zh-cn/
 Command line instructions  
 You can also upload existing files from your computer using the instructions below.  
 
-Git global setup  
+Git global setup  (项目开始)
 git config --global user.name "Administrator"  
 git config --global user.email "admin@example.com"  
 
-Create a new repository  
+Create a new repository  （git新项目）
 git clone http://localhost:10080/root/my-diary.git  
 cd my-diary  
 touch README.md  
@@ -53,7 +53,7 @@ git add README.md
 git commit -m "add README"  
 git push -u origin master  
 
-Push an existing folder  
+Push an existing folder  （git已有项目）
 cd existing_folder  
 git init  
 git remote add origin http://localhost:10080/root/my-diary.git  

@@ -19,7 +19,7 @@
     "sidebar": "node bin/sidebar-auto.js",
     "nav": "node bin/nav-auto.js",
     "compile": "node bin/sidebar-auto.js && node bin/nav-auto.js",
-    "dev": "npm run compile && vuepress dev docs",
+    "serve": "npm run compile && vuepress dev docs",
     "build": "rm -rf ./docs/.vuepress/dist && npm run compile && vuepress build docs",
     "publish": "npm run build && sh ./deploy.sh",
     "git": "sh ./git.sh"

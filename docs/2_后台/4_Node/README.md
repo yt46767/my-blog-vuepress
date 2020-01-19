@@ -19,6 +19,9 @@ https://www.cnblogs.com/yominhi/p/7039795.html
 wnpm install -g whistle
 
 ## 问题
+### scandir 'E:\Project\ke-chuang-loan-\node_modules\_node-sass@4.13.0@node-sass\vendor'
+npm rebuild node-sass
+
 ### npm install 报错（npm ERR! errno -4048，Error: EPERM: operation not permitted,）解决方法  
 直接用命令清理就行，控制台输入：  
 npm cache clean --force  
@@ -129,6 +132,12 @@ https://blog.csdn.net/qq_35624642/article/details/78393035
         return res.render('index', { title: TITLE });  
     });  
 ```  
+
+## 插件 
+### nvmw
+只能用于window的cmd
+注意：
+nvmw切换后
 
 ## 案例
 ### 双向视频通话技术——webrtc  
